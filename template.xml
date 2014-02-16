@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=1040" />
     <title><data:blog.pageTitle/></title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700' rel='stylesheet' type='text/css' />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
 /*
   Strongly Typed 1.1 by HTML5 UP
@@ -1844,7 +1843,7 @@ window._skel_config = {
       <header>
         <h3>
           <a expr:href='data:post.url'>
-              <data:post.dateHeader/> - <data:post.title/>
+              <data:post.dateHeader/><br/><data:post.title/>
           </a>
         </h3>
       </header>
@@ -1908,7 +1907,7 @@ window._skel_config = {
         <b:if cond='data:post.labels'>
           <data:postLabelsLabel/>
           <b:loop values='data:post.labels' var='label'>
-            <a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='data:label.isLast != &quot;true&quot;'>,</b:if>
+            <a expr:href='data:label.url  + &quot;?max-results=3&quot;' rel='tag'><data:label.name/></a><b:if cond='data:label.isLast != &quot;true&quot;'>,</b:if>
           </b:loop>
         </b:if>
       </span>

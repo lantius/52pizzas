@@ -44,6 +44,7 @@ window._skel_config = {
   }
 };
 </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel.min.js"></script>
     <script src="//cdn.jsdelivr.net/skeljs/0.4.6/skel-panels.min.js"></script>
 
